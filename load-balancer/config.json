@@ -1,0 +1,14 @@
+{
+    "port":"8080",
+    "level":"L4",
+    "strategy":"weighted-round-robin",
+    "caching":"redis",
+    "proto":"tcp",
+    "serializer":"none",
+    "servers":{
+        "http://localhost:8081":3,
+        "http://localhost:8082":2
+    },
+    "maxWorkers":5,
+    "cache-ignore":[]
+}
